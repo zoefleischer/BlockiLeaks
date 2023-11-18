@@ -1,7 +1,7 @@
 # BlockiLeaks
 A Decentralized Solution to Media Censorship
 
-<img src=" https://scontent.fesb9-1.fna.fbcdn.net/v/t39.30808-6/367373001_10161586260695168_2963163629355377742_n.jpg">
+<img src="https://github.com/zoefleischer/BlockiLeaks/blob/main/LOGO..jpg">
 
 Our project seamlessly integrates various technologies to create a decentralized content platform with a robust and transparent process. Here's a concise technical overview:
 
