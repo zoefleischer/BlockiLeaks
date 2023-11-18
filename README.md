@@ -1,8 +1,11 @@
 # BlockiLeaks
 A Decentralized Solution to Media Censorship
 
+<img src=" https://scontent.fesb9-1.fna.fbcdn.net/v/t39.30808-6/367373001_10161586260695168_2963163629355377742_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=VB9GEhxM0K0AX9kfZEJ&_nc_ht=scontent.fesb9-1.fna&oh=00_AfBjN8SpXdPcaIUdj6T348jLe4YWh4A0rvahwVBieyqcng&oe=655E4946">
+
+
 Our project seamlessly integrates various technologies to create a decentralized content platform with a robust and transparent process. Here's a concise technical overview:
-Decentralized Governance Framework:
+Decentralized Governance Framework: 
 Blockileaks introduces a decentralized news DAO governed by a meticulously designed contract. This governance structure outlines key components, including member categorization, criteria for membership acquisition, voting mechanisms, treasury management, and a procedural framework for proposing, approving, and implementing decisions related to future changes in platform architecture.
 .
 Article Submission on React Client:
