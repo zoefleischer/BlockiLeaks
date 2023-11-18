@@ -1,0 +1,11 @@
+{
+  "mumbai": {
+    "dnewsfeed": {
+      "address": "0x668cd053A3429106E9149e6D6075d55Db4fB6214",
+      "startBlock": 42465552
+    },
+    "dnewstoken": {
+      "address": "0x9472Cc719F94C9DDb1FD8A247DCDc3d6a1FEeAf7"
+    }
+  }
+}

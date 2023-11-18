@@ -1,0 +1,68 @@
+specVersion: 0.0.5
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum
+    name: dnewsfeed
+    network: mumbai
+    source:
+      address: "0x668cd053A3429106E9149e6D6075d55Db4fB6214"
+      abi: dnewsfeed
+      startBlock: 42465552
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Approval
+        - ApprovalForAll
+        - Downvoted
+        - OwnershipTransferred
+        - PostSubmitted
+        - Transfer
+        - Upvoted
+      abis:
+        - name: dnewsfeed
+          file: dnewsfeed/abis/dnewsfeed.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,indexed uint256)
+          handler: handleApproval
+        - event: ApprovalForAll(indexed address,indexed address,bool)
+          handler: handleApprovalForAll
+        - event: Downvoted(indexed uint256,address)
+          handler: handleDownvoted
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+        - event: PostSubmitted(indexed uint256,string)
+          handler: handlePostSubmitted
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransfer
+        - event: Upvoted(indexed uint256,address)
+          handler: handleUpvoted
+      file: dnewsfeed/dnewsfeed.wasm
+  - kind: ethereum
+    name: dnewstoken
+    network: mumbai
+    source:
+      address: "0x9472Cc719F94C9DDb1FD8A247DCDc3d6a1FEeAf7"
+      abi: dnewstoken
+      startBlock: 42465552
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - dnewstokenApproval
+        - dnewstokenOwnershipTransferred
+        - dnewstokenTransfer
+      abis:
+        - name: dnewstoken
+          file: dnewstoken/abis/dnewstoken.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,uint256)
+          handler: handleApproval
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: dnewstoken/dnewstoken.wasm
